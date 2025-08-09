@@ -1,12 +1,11 @@
-project-root/
-├── controllers/ ← 💡 Handles business logic (CRUD operations)
-│ └── userController.js
-├── models/ ← 💾 Handles database queries / schema setup
-│ └── userModel.js
-├── routes/ ← 🛣️ Defines API routes and maps them to controller functions
-│ └── userRoutes.js
-├── config/ ← ⚙️ Database connection and other configs
-│ └── db.js
-├── app.js ← 🚀 Main Express app setup
-├── server.js ← 🌐 Starts the server
-└── .env ← 🔐 Environment variables (e.g., DB credentials)
+A simple CRUD Blog API that allows users to create an account and publish blog posts. 
+
+### Built With
+- Express
+- MySQL
+
+### ORM
+- Sequelize
+
+### Password Hashing Library
+- bcrypt
