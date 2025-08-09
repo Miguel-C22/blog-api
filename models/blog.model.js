@@ -1,20 +1,23 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../config/db");
 
-const User = sequelize.define("user", {
-  name: {
+const Blog = sequelize.define("blogs", {
+  userId: {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  email: {
+  title: {
     type: Sequelize.STRING,
     allowNull: false,
-    unique: true,
   },
-  password: {
+  author: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  blog: {
     type: Sequelize.STRING,
     allowNull: false,
   },
 });
 
-module.exports = User;
+module.exports = Blog;

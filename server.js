@@ -8,8 +8,7 @@ const app = express();
 const sequelize = require("./config/db");
 
 const authRoute = require("./routes/auth.routes");
-const commentRoute = require("./routes/comment.routes");
-const postRoute = require("./routes/post.routes");
+const blogRoute = require("./routes/blog.routes");
 
 async function getUsers() {
   try {
@@ -30,8 +29,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // ✅ Mount routes
 app.use(authRoute);
-app.use(commentRoute);
-app.use(postRoute);
+app.use(blogRoute);
 
 app.use(bodyParser.urlencoded({ extended: false })); // For Form Submission and can parse them to make them readable
 
